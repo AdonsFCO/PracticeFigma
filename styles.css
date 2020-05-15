@@ -1,3 +1,83 @@
+.container {
+  display: flexbox;
+  flex-direction: column;
+}
 
+/***********************HEADER*****************/
+header {
+  padding-right: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+/*Logo*/
+#leftElements {
+  display: flex;
+  flex-direction: row;
+}
+
+.pictureLogo {
+  height: 40px;
+  width: 40px;
+}
+
+#redPlexText {
+  height: 79;
+  width: 20;
+}
+
+/*Navigation menu*/
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.topButton {
+  height: 119;
+  width: 32;
+  /*background:#D80027 ;  <-- add this on hover
+  color:white;
+  */
+}
+
+#rightElements {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: blue;
+}
+
+/*Bell Icon Components*/
+#search {
+  height: 16px;
+  width: 16px;
+}
+
+#bell {
+  display: flex;
+  flex-direction: row;
+}
+
+#bellIcon {
+  width: 17px;
+  height: 18px;
+}
+
+#notificationCounter {
+  width: 8px;
+  height: 16px;
+  border: solid black 1px;
+}
+
+/*User profile*/
+#userProfile {
+  display: flex;
+  flex-direction: row;
+}
+
+#userProfilePicture {
+  width: 40px;
+  height: 40px;
+}
 
 /*# sourceMappingURL=styles.css.map */
