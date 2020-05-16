@@ -6,7 +6,9 @@
 
 /***********************HEADER*****************/
 header {
-  flex-wrap: nowrap;
+  border-bottom: double;
+  padding-bottom: 2%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -36,11 +38,19 @@ nav {
 }
 
 .topButton {
-  height: 119;
-  width: 32;
-  /*background:#D80027 ;  <-- add this on hover
-  color:white;
-  */
+  font-size: 14px;
+  font-family: San Francisco Text;
+  margin-left: 20px;
+  display: flex;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 5px 4px 5px;
+  border-radius: 200px;
+}
+
+.topButton:hover {
+  background: #D80027;
 }
 
 #rightElements {
@@ -86,6 +96,11 @@ main {
   /*flex*/
   display: flex;
   flex-direction: column;
+}
+
+.arrow {
+  width: 26px;
+  height: 12px;
 }
 
 section {
