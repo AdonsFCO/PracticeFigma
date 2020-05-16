@@ -1,7 +1,8 @@
 //Full container
 .container
 {
-display: flexbox;
+padding:0px;
+display:flex;
 flex-direction: column;
 
 
@@ -9,11 +10,13 @@ flex-direction: column;
 /***********************HEADER*****************/
 header
 {
-padding-right: 100px
-;
+
+
 //flex
+flex-wrap: nowrap;
 display: flex;
 flex-direction: row;
+justify-content: space-between;
 }
 
 //Left elements
@@ -24,6 +27,7 @@ flex-direction: row;
 //flex
 display: flex;
 flex-direction: row;
+flex-wrap: nowrap;
 
 }
 
@@ -65,7 +69,7 @@ display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
 
-background-color:blue;}
+}
 /*Bell Icon Components*/
 #search 
 {
@@ -106,4 +110,51 @@ border:solid black 1px;
 {
     width: 40px;
     height: 40px;
+}
+
+///////////////////////////Main////////////////////
+main
+{
+
+/*flex*/
+display: flex;
+flex-direction: column;
+}
+
+section 
+{
+
+    /*flex*/
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+
+/*Special Flex*/
+.textElement 
+{
+display:flex;
+flex-direction: row;
+
+}
+
+
+/*Movie Section*/
+
+
+.movie
+{
+
+padding:57px 118px 57px 118px;
+width: 182;
+height: 302px;
+
+
+}
+.moviePicture
+{
+width: 148px;
+height: 220px;
+
 }
