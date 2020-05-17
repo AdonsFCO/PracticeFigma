@@ -1,18 +1,26 @@
 body {
-  background-color: #F28987;
+  background-color: #E7C2C0;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .container {
-  background-color: #FFD7DC;
+  background-color: #FFE0E6;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  margin: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 /***********************HEADER*****************/
 header {
-  border-bottom: double;
+  border-bottom: 1px double #F28987;
   width: auto;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -28,6 +36,24 @@ header {
   align-items: center;
 }
 
+#leftElements:hover {
+  opacity: 0.5;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px blue;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px blue;
+  }
+}
 .pictureLogo {
   margin-left: 40px;
   height: 60px;
@@ -84,6 +110,12 @@ nav {
   margin: 10px;
 }
 
+#search:hover {
+  height: 25px;
+  width: 20px;
+  margin: 13px;
+}
+
 #bell {
   margin: 10px;
   position: relative;
@@ -92,6 +124,12 @@ nav {
 #bellIcon {
   width: 25px;
   height: 25px;
+}
+
+#bell:hover {
+  width: 25px;
+  height: 25px;
+  position: relative;
 }
 
 #notificationCounter {
@@ -127,7 +165,12 @@ nav {
   justify-content: center;
 }
 
+#userProfile:hover {
+  opacity: 0.5;
+}
+
 #userName {
+  font-weight: 600;
   margin: 20px;
 }
 
@@ -145,6 +188,8 @@ main {
   /*flex*/
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  vertical-align: baseline;
 }
 
 .arrow {
@@ -176,6 +221,9 @@ align-content: space-between;
 }
 */
 .textSection {
+  font-size: 16px;
+  font-weight: 600;
+  /*flex*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -183,24 +231,52 @@ align-content: space-between;
 
 .mostPopular {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+  position: relative;
+}
+
+.mostPopular:hover {
+  opacity: 0.5;
+}
+
+.line {
+  position: absolute;
+  bottom: -4px;
+  left: 3px;
+  width: 24px;
+  height: 3px;
+  background-color: #E63A31;
+  border-radius: 30%;
+  -webkit-border-radius: 30%;
+  -moz-border-radius: 30%;
+  -ms-border-radius: 30%;
+  -o-border-radius: 30%;
 }
 
 .seeMore {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 120px;
 }
 
 .aloneArrow {
   margin-left: 3px;
 }
 
+.seeMore:hover {
+  opacity: 0.5;
+}
+.seeMore:hover .aloneArrow {
+  opacity: 0.5;
+}
+
 section {
   /*flex*/
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 /*Special Flex*/
@@ -209,16 +285,62 @@ section {
   flex-direction: row;
 }
 
+.movieSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
 /*Movie Section*/
 .movie {
-  padding: 57px 118px 57px 118px;
+  background-color: #FFF1F8;
+  padding: 40px;
+  margin: 20px;
   width: 182;
   height: 302px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .moviePicture {
   width: 148px;
   height: 220px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.movie:hover {
+  opacity: 0.5;
+}
+
+.title {
+  font-weight: 900;
+}
+
+.year {
+  font-weight: 600;
+}
+
+footer {
+  margin-left: 30px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #FFE0E6;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
