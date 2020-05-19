@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RedPlex</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <script>
+        var visible = false;
+
+       function showBut()
+       {
+
+            for (i= 0; i < document.getElementsByClassName('topButton').length; i++)
+             {
+
+                if (document.getElementsByClassName('topButton')[i].style.display = 'none')
+                {
+                    document.getElementsByClassName('topButton')[i].style.display = 'flex';
+                }   
+                else {if (document.getElementsByClassName('topButton')[i].style.display = 'flex')
+                      
+                {
+                    document.getElementsByClassName('topButton')[i].style.display = 'none';
+                }
+                }   
+                
+
+
+                
+            }
+  
+        }
+           
+        
+
+    
+    
+   </script>
+
 
 </head> 
 <body>
@@ -14,11 +47,14 @@
             <img src="/IMG/Play_Button.png  " class="pictureLogo" alt="redplex">    
             <span id="redPlexText">REDPLEX</span>
         </div> 
+
         
+
+
         
         <nav>             
             <!--Navigation buttons-->
-                <div class="topButton"> 
+                <div class="topButton" id="test"> 
                         Movies
                 </div>
                 <div class="topButton"> 
@@ -29,9 +65,16 @@
                 </div>
                 <div class="topButton"> 
                     Cartoons
-            </div>
+            </div>  
+            <!--For cellphones.-->
+            <a href="#"class="menuButton topButton" onclick="showBut();">Menu</a>
+
+
+   
+
 
         </nav>
+
 
        <div id="rightElements">
             <img src="/IMG/Lupa.svg" id="search" alt="lupa">
@@ -108,7 +151,7 @@
     </div>
     <div class="movie mov3">
         <img src="IMG/interestelar.jpg" alt="Interestelar" class="moviePicture">
-        <div class=title>Interestelar</div> 
+        <div class="title">Interestelar</div> 
         
         <div class="year">2014</div>
     </div>
