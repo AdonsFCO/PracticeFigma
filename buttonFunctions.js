@@ -1,7 +1,7 @@
+///////////////////////////////Menu//////////////////////////
+var visibleMenu = false;
 
-var visible = false;
-
-function showBut()
+function showMenuBut()
 {
  var currentStatus;     
 
@@ -9,14 +9,16 @@ function showBut()
       {      
          currentStatus = document.getElementsByClassName('topButton')[i];
               
-             currentStatus.style.display = 'flex';
+
+         currentStatus.style.display = 'flex';
+            
             
          }   
-         visible = true; 
+         visibleMenu = true; 
  
  }
 
- function hideBut()
+ function hideMenuBut()
  {
  var currentStatus;     
   
@@ -24,25 +26,35 @@ function showBut()
         {      
             currentStatus = document.getElementsByClassName('topButton')[i];
                 
-                currentStatus.style.display = 'none';
+            currentStatus.style.display = 'none';
             
             }   
-            visible = false; 
+            visibleMenu = false; 
 
  }
 
-function changeStatus()
+function changeMenuStatus()
 {
-    if (visible == true)
+    if (visibleMenu == true)
     {
-        hideBut();
+        hideMenuBut();
     }
-    else if (visible == false)
+    else if (visibleMenu == false)
     {
-        showBut();
+        showMenuBut();
 
     }
 
 
 }
 
+////////////////////////////////////SearchButton/////////////////////
+var visibleSearch = false; //Useless by the time.
+
+function showUpSearchbox() 
+{
+document.getElementById("searchBox").style.display = "flex";
+visibleSearch = true; 
+
+
+}

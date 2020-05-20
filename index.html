@@ -37,7 +37,7 @@
                     Cartoons
             </div>  
             <!--For cellphones.-->
-            <a href="#"class="menuButton topButton" onclick="changeStatus();">Menu</a>
+            <a href="#" class="menuButton topButton" onclick="changeMenuStatus();">Menu</a>
 
 
    
@@ -47,8 +47,10 @@
 
 
        <div id="rightElements">
-            <img src="/IMG/Lupa.svg" id="search" alt="lupa">
-
+         <div id="search">
+            <input id="searchBox">
+            <img src="/IMG/Lupa.svg" id="searchIcon" alt="lupa" onClick="showUpSearchbox();">
+        </div>
             <div id="bell">
                 <img src="/IMG/red-bell-icon-394293.png" id="bellIcon" alt="bell">
                 <div id="notificationCounter">
